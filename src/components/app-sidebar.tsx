@@ -1,4 +1,12 @@
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react";
+// Menu items.
+import {
+  LayoutDashboard,
+  Calculator,
+  ClipboardList,
+  CalendarClock,
+  Upload,
+  Settings,
+} from "lucide-react";
 
 import {
   Sidebar,
@@ -14,24 +22,29 @@ import {
 // Menu items.
 const items = [
   {
-    title: "Home",
+    title: "Dashboard",
     url: "#",
-    icon: Home,
+    icon: LayoutDashboard,
   },
   {
-    title: "Inbox",
+    title: "GPA Calculator",
     url: "#",
-    icon: Inbox,
+    icon: Calculator,
   },
   {
-    title: "Calendar",
+    title: "Assignment",
     url: "#",
-    icon: Calendar,
+    icon: ClipboardList,
   },
   {
-    title: "Search",
+    title: "Timetable",
     url: "#",
-    icon: Search,
+    icon: CalendarClock,
+  },
+  {
+    title: "File Upload",
+    url: "#",
+    icon: Upload,
   },
   {
     title: "Settings",
