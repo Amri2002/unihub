@@ -6,6 +6,7 @@ import {
   CalendarClock,
   Upload,
   Settings,
+  GraduationCap,
 } from "lucide-react";
 
 import {
@@ -58,7 +59,8 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel className="text-lg font-semibold tracking-wide text-primary">
+          <SidebarGroupLabel className="flex items-center gap-2 text-lg font-semibold">
+            <GraduationCap size={20} />
             UniHub
           </SidebarGroupLabel>
 
