@@ -64,7 +64,8 @@ export function AssignmentProgressChart({
         >
           <RadialBarChart
             data={chartData}
-            endAngle={270}
+            startAngle={90}
+            endAngle={90 + (360 * percentage) / 100} // dynamically calculate the angle
             innerRadius={80}
             outerRadius={140}
           >
