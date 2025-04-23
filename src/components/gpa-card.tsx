@@ -1,5 +1,12 @@
 // components/cards/GpaCard.tsx
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Calculator } from "lucide-react";
 
 export function GpaCard({ gpa }: { gpa: number }) {
@@ -13,6 +20,14 @@ export function GpaCard({ gpa }: { gpa: number }) {
         <div className="text-2xl font-bold">{gpa.toFixed(2)}</div>
         <p className="text-xs text-muted-foreground mt-1">Last updated today</p>
       </CardContent>
+      <CardFooter>
+        <Link
+          href="#"
+          className="text-sm font-medium text-blue-600 hover:underline ml-auto"
+        >
+          Calculate GPA →
+        </Link>
+      </CardFooter>
     </Card>
   );
 }
