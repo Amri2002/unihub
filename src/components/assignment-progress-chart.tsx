@@ -54,7 +54,7 @@ export function AssignmentProgressChart({
   return (
     <Card className="flex flex-col">
       <CardHeader className="items-center pb-0">
-        <CardTitle>Upcoming Assignment Progress</CardTitle>
+        <CardTitle className="text-lg">Upcoming Assignment Progress</CardTitle>
         <CardDescription>Remaining tasks</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
@@ -64,7 +64,8 @@ export function AssignmentProgressChart({
         >
           <RadialBarChart
             data={chartData}
-            endAngle={270}
+            startAngle={90}
+            endAngle={90 + (360 * percentage) / 100} // dynamically calculate the angle
             innerRadius={80}
             outerRadius={140}
           >
