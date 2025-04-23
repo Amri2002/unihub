@@ -54,7 +54,7 @@ export function AssignmentProgressChart({
   return (
     <Card className="flex flex-col">
       <CardHeader className="items-center pb-0">
-        <CardTitle>Upcoming Assignment Progress</CardTitle>
+        <CardTitle className="text-lg">Upcoming Assignment Progress</CardTitle>
         <CardDescription>Remaining tasks</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
